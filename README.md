@@ -1,2 +1,3 @@
 # devChallenges.io
-The repository where all katas go in
+
+This repo is used to store the challenges realised on [devChallenges.io](https://devchallenges.io/)

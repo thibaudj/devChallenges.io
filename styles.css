@@ -1,3 +1,28 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --ivory: #fafaf9;
+  --black-russian: #1117290d;
+  --blue-chalk: #e6d6fc;
+  --blue-violet: #883ae1;
+  --raven: #6c727f;
+
+  /* Font family */
+  --font-sora: "Sora", sans-serif;
+
+  /* Font Size */
+  --font-size-18: 1.8rem;
+  --font-size-14: 1.4rem;
+  --font-size-12: 1.2rem;
+
+  /* Border Radius */
+  --radius-16: 1.6rem;
+
+  /* Gap */
+  --gap-6: 0.6rem;
+  --gap-16: 1.6rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,60 +34,59 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #fafaf9;
-  font-family: "Sora", sans-serif;
+  background-color: var(--ivory);
+  font-family: var(--font-sora);
   font-optical-sizing: auto;
-  font-style: normal;
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 1.6rem;
+  background-color: var(--white);
+  border-radius: var(--radius-16);
   width: 36.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: fit-content;
   margin-top: 16.4rem;
-  box-shadow: 0px 30px 100px 0px #1117290d;
+  box-shadow: 0px 30px 100px 0px var(--black-russian);
 }
 
 .card__header {
   display: flex;
   flex-direction: column;
   padding: 1.6rem 1.6rem 0 1.6rem;
-  row-gap: 1.6rem;
+  gap: var(--gap-16);
 }
 
 .card__header-picture {
   height: 15.2rem;
-  border-radius: 1.6rem;
+  border-radius: var(--radius-16);
 }
 
 .card__header-chip {
   padding: 0.6rem 1.6rem;
-  background-color: #e6d6fc;
-  color: #883ae1;
+  background-color: var(--blue-chalk);
+  color: var(--blue-violet);
   width: fit-content;
-  border-radius: 1.6rem;
+  border-radius: var(--radius-16);
   font-weight: 500;
 }
 
 .card__header-content {
   display: flex;
   flex-direction: column;
-  row-gap: 0.6rem;
+  gap: var(--gap-6);
 }
 
 .card__header-content--title {
-  font-size: 1.8rem;
+  font-size: var(--font-size-18);
   font-weight: 500;
 }
 
 .card__header-content--description {
-  font-size: 1.4rem;
+  font-size: var(--font-size-14);
   font-weight: 200;
-  color: #6c727f;
+  color: var(--raven);
 }
 
 .card__splitter {
@@ -77,7 +101,7 @@ body {
 }
 
 .card__footer-content {
-  font-size: 1.4rem;
+  font-size: var(--font-size-12);
   font-weight: 200;
-  color: #6c727f;
+  color: var(--raven);
 }
